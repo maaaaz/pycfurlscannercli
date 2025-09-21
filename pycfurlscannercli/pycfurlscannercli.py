@@ -78,6 +78,14 @@ def urlscanner_scan_single(options):
                     except Exception as e:
                         print("\n[!] '%s' submission failed | code '%s' | error '%s'\n" % (malicious_url, e.status_code, e.errors))
                         continue
+                        
+        else:
+            retval = os.EX_NOINPUT
+    
+    else:
+        retval = os.EX_NOINPUT
+    
+    return retval
 
 
 def main():
