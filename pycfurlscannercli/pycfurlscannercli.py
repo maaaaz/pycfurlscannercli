@@ -22,7 +22,7 @@ from cloudflare.types.url_scanner import (
 )
 
 # Globals
-VERSION = '1.0'
+VERSION = '1.1'
 SECRET_CF_API_KEY = 'SECRET_CF_API_KEY'
 SECRET_CF_ACCOUNT_ID = 'SECRET_CF_ACCOUNT_ID'
 
@@ -104,7 +104,7 @@ def main():
     account_id = options.account_id
     if not(account_id):
         if SECRET_CF_ACCOUNT_ID in os.environ:
-            api_key = os.environ[SECRET_CF_ACCOUNT_ID]
+            account_id = os.environ[SECRET_CF_ACCOUNT_ID]
         else:
             parser.error('[!] No Cloudflare account ID key has been provided, exiting.')
     options.account_id = account_id
