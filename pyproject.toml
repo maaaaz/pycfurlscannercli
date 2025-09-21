@@ -8,7 +8,7 @@ authors = [{ email = "tdebize@mail.com" }]
 description = "A simple Python script to interact with Cloudflare Radar URL scanner APIs from CLI."
 readme = "README.md"
 requires-python = ">=3"
-keywords = ["cloudflare", "radar", "url", "scanner", "phishing", "threat", "ioc", "api", "cli"]
+keywords = ["cloudflare", "radar", "url", "scanner", "phishing", "website", "threat", "ioc", "api", "cli"]
 license = "LGPL-3.0-or-later"
 classifiers = [
     'Topic :: Security',
